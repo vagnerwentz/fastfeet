@@ -19,6 +19,7 @@ import OrderController from './app/controllers/OrderController';
 import DeliveryController from './app/controllers/DeliveryController';
 import DeliveryProblemController from './app/controllers/DeliveryProblemController';
 import DeliveryCancelController from './app/controllers/DeliveryCancelController';
+import CancelDeliveryController from './app/controllers/CancelDeliveryController';
 
 import authMiddleware from './app/middlewares/auth';
 import authMiddlewareAdmin from './app/middlewares/authAdmin';
@@ -26,7 +27,6 @@ import authMiddlewareAdmin from './app/middlewares/authAdmin';
 const routes = new Router();
 const upload = multer(multerConfig);
 
-routes.post('/sessions', SessionController.store);
 routes.post('/files', upload.single('file'), FileController.store);
 
 routes.post('/users', UserController.store);
@@ -54,8 +54,12 @@ routes.put(
 );
 routes.post('/delivery', DeliveryController.store);
 
+routes.post('/sessions', SessionController.store);
+
 // Below these routes, who can access is only who has authentication
 routes.use(authMiddleware);
+routes.get('/deliveries/problems', DeliveryProblemController.index);
+
 routes.use(authMiddlewareAdmin);
 
 routes.put('/users', UserController.update);
@@ -78,7 +82,8 @@ routes.delete('/orders/:id', OrderController.delete);
 routes.get('/orders', OrderController.index);
 
 routes.get('/delivery/:order_id/problems', DeliveryProblemController.show);
-routes.get('/delivery/problems', DeliveryProblemController.index);
+
+routes.put('/problem/:id/cancel-delivery', CancelDeliveryController.update);
 
 routes.delete('/problem/:id/cancel', DeliveryCancelController.delete);
 

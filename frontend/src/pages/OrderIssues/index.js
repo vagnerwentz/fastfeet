@@ -57,7 +57,7 @@ export default function Problems() {
     return (
       <ConfirmContent>
         <p className="question">
-          Deseja cancelar a encomenda <strong>#{problem.delivery.id}</strong>?
+          Deseja cancelar a encomenda <strong>#{problem.order.id}</strong>?
         </p>
         <div className="actions">
           <button type="button" onClick={() => confirmModalRef.current.hide()}>
@@ -101,7 +101,7 @@ export default function Problems() {
           <tbody>
             {problems.map((problem) => (
               <tr key={problem.id}>
-                <td>{`#${problem.delivery.id}`}</td>
+                <td>{`#${problem.order.id}`}</td>
                 <td>{problem.description}</td>
                 <td>
                   <DropdownMenu

@@ -9,6 +9,8 @@ import sentryConfig from './config/sentry';
 
 import './database';
 
+require('dotenv/config');
+
 class App {
     constructor() {
         this.server = express();
