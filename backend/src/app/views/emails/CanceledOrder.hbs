@@ -1,0 +1,20 @@
+<h1>
+  <strong>Hello, {{ deliveryman }}!</strong>
+</h1>
+<h3>
+  <p>Uma de suas entregas foi cancelada</p>
+</h3>
+
+<p>Aqui tem todos os detalhes:</p>
+<p>
+  <div class="info">
+    <h4>Encomenda</h4>
+    <strong>Cancelado:</strong><div>{{ canceled_at }}</div>
+    <h4>Informações do produto</h4>
+    <strong>Nome:</strong><div>{{ product }}</div>
+    <h4>Informação do destinatário</h4>
+    <strong>Nome: </strong><div>{{ recipient }}</div>
+  </div>
+</p>
+
+<hr />
