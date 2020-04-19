@@ -115,3 +115,40 @@ Você precisa ter na sua máquina o **Node.js**, o **Yarn** e o **Docker**. Feit
  - Feitos os downloads de todas as dependências, execute `yarn android`, caso seja a primeira execução, ou `yarn start` para inicializar o aplicativo;
 
 ---
+
+## Imagens da aplicação
+> Login
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/login-screen.png" alt="Página de login" />
+  
+> Login com dados
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/login-screen-with-datas.png" alt="Página de login" />
+  
+> Encomendas
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/encomendas.png" alt="Página de login" />
+  
+> Encomenda entregue
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/encomenda-entregue.png" alt="Página de login" />
+  
+> Detalhes encomenda mobile
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/detalhes-encomenda.png" alt="Página de login" />
+  
+> Dashboard entregador
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/screen-dashboard-entregador.png" alt="Página de login" />
+  
+> Tela entregadores
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/tela-entregadores.png" alt="Página de login" />
+  
+> Destinatários
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/destinatarios.png" alt="Página de login" />
+  
+> Criar entregador
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/criar-entregador.png" alt="Página de login" />
+  
+> Criar encomenda
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/criar-encomenda.png" alt="Página de login" />
+  
+> Confirmar entrega (Rodei no emulador por isso a tela preta na câmera)
+  <img src="https://github.com/vagnerwentz/fastfeet/blob/master/screens/confirmar-entrega-.png" alt="Página de login" />
+
+  
+  
